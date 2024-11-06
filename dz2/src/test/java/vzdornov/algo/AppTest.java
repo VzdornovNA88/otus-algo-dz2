@@ -30,10 +30,6 @@ public class AppTest
             new BigInteger("32458256583753952"),
             new BigInteger("3081918923741896840")
     };
-    // @BeforeAll
-	// public static void init(){
-	// 	System.out.println("Before All init() method called");
-	// }
 
     @DisplayName("Count lucky tickets by dynamic programming method test")
 	@RepeatedTest(value = 10)
@@ -55,20 +51,4 @@ public class AppTest
         int i = repetitionInfo.getCurrentRepetition();
         Assertions.assertEquals(tickets[i-1],BigInteger.valueOf(App.countLuckyDinProgLongMethod(i)));
     }
-
-    // @DisplayName("benchmark")
-	// @Test
-    // void testBenchCountLuckyDinProgMethod() {
-    //     Options opt = new OptionsBuilder()
-    //             .include(AppBenchmark.class.getSimpleName())
-    //             .forks(1)
-    //             .build();
-
-    //     try {
-    //         new Runner(opt).run();
-    //     } catch (RunnerException e) {
-    //         // TODO Auto-generated catch block
-    //         e.printStackTrace();
-    //     }
-    // }
 }

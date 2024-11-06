@@ -1,0 +1,5 @@
+checks.json
+.vscode/settings.json
+dz2/target/test-classes/vzdornov/algo/AppBenchmark.class
+dz2/target/test-classes/vzdornov/algo/AppTest.class
+dz2/target/classes/vzdornov/algo/App.class

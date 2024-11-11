@@ -1,6 +1,7 @@
 package vzdornov.algo;
 
 import java.math.BigInteger;
+import java.util.Date;
 
 public class App 
 {
@@ -92,8 +93,19 @@ public class App
 
     public static void main( String[] args )
     {
-        System.out.println( countLuckyDinProgMethod(300) );
+        Date d = new Date();
+        
+        System.out.println( d.toString() + " : " + "BEGIN" );
 
-        System.out.println( countLuckyBruteForceMethod((short)3) );
+        System.out.println( "N = 3" );
+        System.out.println( d.toString() + " : " + countLuckyBruteForceMethod((short)3) );
+
+        System.out.println( "N = 10" );
+        System.out.println( d.toString() + " : " + countLuckyDinProgMethod(10) );
+
+        System.out.println( "N = 300" );
+        System.out.println( d.toString() + " : " + countLuckyDinProgMethod(300) );
+
+        System.out.println( d.toString() + " : " + "END" );
     }
 }

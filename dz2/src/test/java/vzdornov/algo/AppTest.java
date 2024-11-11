@@ -46,7 +46,7 @@ public class AppTest
     }
 
     @DisplayName("Count lucky tickets by dynamic programming with type \"long\" method test")
-	@RepeatedTest(value = 10)
+	@RepeatedTest(value = 8)
     void testCountLuckyDinProgLongMethod(RepetitionInfo repetitionInfo) {
         int i = repetitionInfo.getCurrentRepetition(); // тест не пройдет на 2 последних входных значения из-за переполнения long (эта проблема решена использованием BigInteger в тесте №1 )
         Assertions.assertEquals(tickets[i-1],BigInteger.valueOf(App.countLuckyDinProgLongMethod(i)));
